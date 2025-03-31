@@ -3,66 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my Resume</title>
+    <title>My Timeline Homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(to right, #ff7e5f, #feb47b);
-            color: #fff;
+            color: #333;
         }
-        header {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px 0;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        .banner {
-            width: 100%; /* Full width */
-            height: auto; /* Maintain aspect ratio */
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            background: rgba(0, 0, 0, 0.7);
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: rgba(0, 0, 0, 0.5);
+        .timeline {
             position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 6px;
+            background-color: #333;
+            top: 0;
             bottom: 0;
-            width: 100%;
+            transform: translateX(-50%);
+        }
+        .year {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin: 20px 0;
+        }
+        .year .dot {
+            height: 12px;
+            width: 12px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .year .widget-box {
+            margin-left: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 200px; /* Adjust width as needed */
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to My Colorful Homepage</h1>
+        <h1>My Timeline</h1>
     </header>
-    <img src="harbor_walk_bridge.jpeg" alt="Banner Image" class="banner">
+    
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! I'm excited to share my journey with you. This is my personal space where I explore ideas and projects.</p>
-        </section>
-        <section>
-            <h2>My Interests</h2>
-            <p>I love coding, design, and exploring new technologies. Join me as I share my adventures!</p>
-        </section>
+        <div class="timeline">
+            <div class="year">
+                <div class="dot"></div>
+                <div class="widget-box">
+                    <h3>2012</h3>
+                    <p>Details about events or milestones in 2012.</p>
+                    <!-- Add your widget here -->
+                </div>
+            </div>
+            <div class="year">
+                <div class="dot"></div>
+                <div class="widget-box">
+                    <h3>2013</h3>
+                    <p>Details about events or milestones in 2013.</p>
+                    <!-- Add your widget here -->
+                </div>
+            </div>
+            <div class="year">
+                <div class="dot"></div>
+                <div class="widget-box">
+                    <h3>2014</h3>
+                    <p>Details about events or milestones in 2014.</p>
+                    <!-- Add your widget here -->
+                </div>
+            </div>
+            <!-- Add more years as needed -->
+            <div class="year">
+                <div class="dot"></div>
+                <div class="widget-box">
+                    <h3>2023</h3>
+                    <p>Details about events or milestones in 2023.</p>
+                    <!-- Add your widget here -->
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2023 My Colorful Homepage</p>
-    </footer>
+
 </body>
 </html>
