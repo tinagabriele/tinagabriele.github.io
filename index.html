@@ -27,18 +27,19 @@
             margin-left: auto; /* Center the message */
             margin-right: auto; /* Center the message */
         }
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
+        .timeline {    
+            display: flex; /* Use flexbox for the timeline */    
+            flex-direction: column; /* Ensure items stack vertically */    
+            max-width: 800px;    
+            margin: 0 auto;    
             padding: 20px 0;
         }
-        .year {
-            display: flex;
-            align-items: center;
-            position: relative;
-            margin: 20px 0;
+        
+        .year {    
+            display: block; /* Ensure year boxes stack vertically */    
+            margin: 20px 0; /* Maintain vertical spacing */
         }
+        
         .year .widget-box {
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
