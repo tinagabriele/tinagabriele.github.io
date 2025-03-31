@@ -8,7 +8,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #d1f2eb; /* Light pink background */
+            background-color: #d1f2eb; /* Light blue background */
             color: #333;
         }
         header {
@@ -36,7 +36,6 @@
         }
         
         .year {    
-            display: block; /* Ensure year boxes stack vertically */    
             margin: 20px 0; /* Maintain vertical spacing */
         }
         
@@ -52,9 +51,20 @@
             text-align: center; /* Center the text inside the widget box */
             margin: 0; /* Remove default margin for heading */
         }
+        .year-content {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+        }
+        .year-image {
+            width: 400px; /* Set image width */
+            height: 400px; /* Set image height */
+            border-radius: 8px; /* Optional: add rounded corners */
+            margin-top: 10px; /* Space between widget box and image */
+        }
         .image-placeholder {
-            width: 400px; /* Set width to twice as wide */
-            height: 150px; /* Set height to match the year box */
+            width: 400px; /* Set width for placeholders */
+            height: 150px; /* Set height for placeholders */
             background-color: #e0e0e0; /* Light grey background for the placeholder */
             border: 2px dashed #333; /* Dashed border */
             border-radius: 8px;
@@ -62,18 +72,7 @@
             align-items: center;
             justify-content: center;
             color: #666; /* Text color for placeholder */
-        }
-        .year-content {
-            display: flex;
-            justify-content: flex-start; /* Align items to the start */
-            align-items: center;
-            width: 100%;
-        }
-        .left {
-            flex-direction: row; /* For left positioning */
-        }
-        .right {
-            flex-direction: row-reverse; /* For right positioning */
+            margin-top: 10px; /* Space between widget box and placeholder */
         }
     </style>
 </head>
