@@ -56,7 +56,6 @@
             transform: translateX(-50%);
         }
         .year .widget-box {
-            margin-left: 40px;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 8px;
@@ -64,7 +63,6 @@
             width: 200px; /* Adjust width as needed */
         }
         .image-placeholder {
-            margin-left: 20px;
             width: 100px; /* Placeholder width */
             height: 100px; /* Placeholder height */
             background-color: #e0e0e0; /* Light grey background for the placeholder */
@@ -81,6 +79,12 @@
             align-items: center;
             width: 100%;
         }
+        .left {
+            flex-direction: row; /* For left positioning */
+        }
+        .right {
+            flex-direction: row-reverse; /* For right positioning */
+        }
     </style>
 </head>
 <body>
@@ -92,7 +96,7 @@
     
     <main>
         <div class="timeline">
-            <div class="year">
+            <div class="year left">
                 <div class="dot"></div>
                 <div class="year-content">
                     <div class="widget-box">
@@ -103,7 +107,7 @@
                     <div class="image-placeholder">Image 2012</div>
                 </div>
             </div>
-            <div class="year">
+            <div class="year right">
                 <div class="dot"></div>
                 <div class="year-content">
                     <div class="widget-box">
@@ -114,7 +118,7 @@
                     <div class="image-placeholder">Image 2013</div>
                 </div>
             </div>
-            <div class="year">
+            <div class="year left">
                 <div class="dot"></div>
                 <div class="year-content">
                     <div class="widget-box">
@@ -125,7 +129,7 @@
                     <div class="image-placeholder">Image 2014</div>
                 </div>
             </div>
-            <div class="year">
+            <div class="year right">
                 <div class="dot"></div>
                 <div class="year-content">
                     <div class="widget-box">
@@ -136,7 +140,7 @@
                     <div class="image-placeholder">Image 2015</div>
                 </div>
             </div>
-            <div class="year">
+            <div class="year left">
                 <div class="dot"></div>
                 <div class="year-content">
                     <div class="widget-box">
@@ -147,7 +151,7 @@
                     <div class="image-placeholder">Image 2016</div>
                 </div>
             </div>
-            <div class="year">
+            <div class="year right">
                 <div class="dot"></div>
                 <div class="year-content">
                     <div class="widget-box">
@@ -158,7 +162,7 @@
                     <div class="image-placeholder">Image 2017</div>
                 </div>
             </div>
-            <div class="year">
+            <div class="year left">
                 <div class="dot"></div>
                 <div class="year-content">
                     <div class="widget-box">
@@ -169,7 +173,7 @@
                     <div class="image-placeholder">Image 2018</div>
                 </div>
             </div>
-            <div class="year">
+            <div class="year right">
                 <div class="dot"></div>
                 <div class="year-content">
                     <div class="widget-box">
@@ -180,7 +184,7 @@
                     <div class="image-placeholder">Image 2019</div>
                 </div>
             </div>
-            <div class="year">
+            <div class="year left">
                 <div class="dot"></div>
                 <div class="year-content">
                     <div class="widget-box">
@@ -191,63 +195,8 @@
                     <div class="image-placeholder">Image 2020</div>
                 </div>
             </div>
-            <div class="year">
+            <div class="year right">
                 <div class="dot"></div>
                 <div class="year-content">
                     <div class="widget-box">
-                        <h3>2021</h3>
-                        <p>Details about events or milestones in 2021.</p>
-                        <!-- Add your widget here -->
-                    </div>
-                    <div class="image-placeholder">Image 2021</div>
-                </div>
-            </div>
-            <div class="year">
-                <div class="dot"></div>
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2022</h3>
-                        <p>Details about events or milestones in 2022.</p>
-                        <!-- Add your widget here -->
-                    </div>
-                    <div class="image-placeholder">Image 2022</div>
-                </div>
-            </div>
-            <div class="year">
-                <div class="dot"></div>
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2023</h3>
-                        <p>Details about events or milestones in 2023.</p>
-                        <!-- Add your widget here -->
-                    </div>
-                    <div class="image-placeholder">Image 2023</div>
-                </div>
-            </div>
-            <div class="year">
-                <div class="dot"></div>
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2024</h3>
-                        <p>Details about events or milestones in 2024.</p>
-                        <!-- Add your widget here -->
-                    </div>
-                    <div class="image-placeholder">Image 2024</div>
-                </div>
-            </div>
-            <div class="year">
-                <div class="dot"></div>
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2025</h3>
-                        <p>Details about events or milestones in 2025.</p>
-                        <!-- Add your widget here -->
-                    </div>
-                    <div class="image-placeholder">Image 2025</div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-</body>
-</html>
+                        <h3>2021</h
