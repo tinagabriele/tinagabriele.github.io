@@ -28,8 +28,6 @@
             margin-right: auto; /* Center the message */
         }
         .timeline {    
-            display: flex; /* Use flexbox for the timeline */    
-            flex-direction: column; /* Ensure items stack vertically */    
             max-width: 1000px;    
             margin: 0 auto;    
             padding: 20px 0;
@@ -37,30 +35,27 @@
         
         .year {    
             margin: 20px 0; /* Maintain vertical spacing */
+            display: flex; /* Use flexbox for the year */
+            align-items: flex-start; /* Align items at the start */
         }
         
-        .year .widget-box {
+        .widget-box {
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             width: 350px; /* Adjust width as needed */
             text-align: left; /* Left align the text inside the widget box */
+            margin-right: 20px; /* Space between widget and image */
         }
         .widget-box h3 {    
             text-align: center; /* Center the text inside the widget box */
             margin: 0; /* Remove default margin for heading */
         }
-        .year-content {
-            display: flex;
-            flex-direction: row; /* Stack items horizontally */
-            align-items: center; /* Center items horizontally */
-        }
         .year-image {
             width: 350px; /* Set image width */
             height: 300px; /* Set image height */
             border-radius: 8px; /* Optional: add rounded corners */
-            margin-top: 10px; /* Space between widget box and image */
         }
         .image-placeholder {
             width: 350px; /* Set width for placeholders */
@@ -72,7 +67,6 @@
             align-items: center;
             justify-content: center;
             color: #666; /* Text color for placeholder */
-            margin-top: 10px; /* Space between widget box and placeholder */
         }
     </style>
 </head>
@@ -85,131 +79,104 @@
     
     <main>
         <div class="timeline">
-            <div class="year left">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2012</h3>
-                        <p>In 2012, Christina graduated with honors from Gulliver Preparatory School in Miami, FL, where she served as captain and starting pitcher of the women's softball team for three years. That year, the team achieved a historic "three-peat," winning the Florida 3A state finals for three consecutive years and making headlines across the state.</p>
-                        <p> She recieved a full scholarship to attend George Mason University, being honored both with athletic and academic scholarships.</p>
-                   </div>        
-                    <img src="harbor_walk_sunset.jpeg" alt="Picture of sunset." class="year-image" />
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2012</h3>
+                    <p>In 2012, Christina graduated with honors from Gulliver Preparatory School in Miami, FL, where she served as captain and starting pitcher of the women's softball team for three years. That year, the team achieved a historic "three-peat," winning the Florida 3A state finals for three consecutive years and making headlines across the state.</p>
+                    <p> She received a full scholarship to attend George Mason University, being honored both with athletic and academic scholarships.</p>
+                </div>        
+                <img src="harbor_walk_sunset.jpeg" alt="Picture of sunset." class="year-image" />
             </div>
-            <div class="year right">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2013</h3>
-                        <p>Details about events or milestones in 2013.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2013</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2013</h3>
+                    <p>Details about events or milestones in 2013.</p>
                 </div>
+                <div class="image-placeholder">Image 2013</div>
             </div>
-            <div class="year left">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2014</h3>
-                        <p>Details about events or milestones in 2014.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2014</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2014</h3>
+                    <p>Details about events or milestones in 2014.</p>
                 </div>
+                <div class="image-placeholder">Image 2014</div>
             </div>
-            <div class="year right">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2015</h3>
-                        <p>Details about events or milestones in 2015.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2015</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2015</h3>
+                    <p>Details about events or milestones in 2015.</p>
                 </div>
+                <div class="image-placeholder">Image 2015</div>
             </div>
-            <div class="year left">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2016</h3>
-                        <p>Details about events or milestones in 2016.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2016</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2016</h3>
+                    <p>Details about events or milestones in 2016.</p>
                 </div>
+                <div class="image-placeholder">Image 2016</div>
             </div>
-            <div class="year right">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2017</h3>
-                        <p>Details about events or milestones in 2017.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2017</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2017</h3>
+                    <p>Details about events or milestones in 2017.</p>
                 </div>
+                <div class="image-placeholder">Image 2017</div>
             </div>
-            <div class="year left">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2018</h3>
-                        <p>Details about events or milestones in 2018.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2018</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2018</h3>
+                    <p>Details about events or milestones in 2018.</p>
                 </div>
+                <div class="image-placeholder">Image 2018</div>
             </div>
-            <div class="year right">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2019</h3>
-                        <p>Details about events or milestones in 2019.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2019</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2019</h3>
+                    <p>Details about events or milestones in 2019.</p>
                 </div>
+                <div class="image-placeholder">Image 2019</div>
             </div>
-            <div class="year left">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2020</h3>
-                        <p>Details about events or milestones in 2020.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2020</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2020</h3>
+                    <p>Details about events or milestones in 2020.</p>
                 </div>
+                <div class="image-placeholder">Image 2020</div>
             </div>
-            <div class="year right">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2021</h3>
-                        <p>Details about events or milestones in 2021.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2021</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2021</h3>
+                    <p>Details about events or milestones in 2021.</p>
                 </div>
+                <div class="image-placeholder">Image 2021</div>
             </div>
-            <div class="year left">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2022</h3>
-                        <p>Details about events or milestones in 2022.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2022</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2022</h3>
+                    <p>Details about events or milestones in 2022.</p>
                 </div>
+                <div class="image-placeholder">Image 2022</div>
             </div>
-            <div class="year right">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2023</h3>
-                        <p>Details about events or milestones in 2023.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2023</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2023</h3>
+                    <p>Details about events or milestones in 2023.</p>
                 </div>
+                <div class="image-placeholder">Image 2023</div>
             </div>
-            <div class="year left">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2024</h3>
-                        <p>Details about events or milestones in 2024.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2024</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2024</h3>
+                    <p>Details about events or milestones in 2024.</p>
                 </div>
+                <div class="image-placeholder">Image 2024</div>
             </div>
-            <div class="year right">
-                <div class="year-content">
-                    <div class="widget-box">
-                        <h3>2025</h3>
-                        <p>Details about events or milestones in 2025.</p>
-                    </div>
-                    <div class="image-placeholder">Image 2025</div>
+            <div class="year">
+                <div class="widget-box">
+                    <h3>2025</h3>
+                    <p>Details about events or milestones in 2025.</p>
                 </div>
+                <div class="image-placeholder">Image 2025</div>
             </div>
         </div>
     </main>
