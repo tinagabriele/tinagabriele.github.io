@@ -36,7 +36,7 @@
         .year {    
             margin: 20px 0; /* Maintain vertical spacing */
             display: flex; /* Use flexbox for the year */
-            align-items: flex-start; /* Align items at the start */
+            align-items: stretch; /* Stretch items to the same height */
         }
         
         .widget-box {
@@ -45,9 +45,11 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             width: 400px; /* Adjust width as needed */
-            height: 300px; /* Set image height */
             text-align: left; /* Left align the text inside the widget box */
             margin-right: 20px; /* Space between widget and image */
+            display: flex; /* Use flexbox for alignment */
+            flex-direction: column; /* Stack the elements vertically */
+            justify-content: space-between; /* Space out content */
         }
         .widget-box h3 {    
             text-align: center; /* Center the text inside the widget box */
@@ -74,7 +76,7 @@
 
     <header>
         <h1>Christina's Resume</h1>
-        <p class="welcome-message">Welcome to my dynamic resume webpage! I believe that people are more than just a piece of paper; our stories, experiences, and passions shape who we are. This platform is designed to provide you with a deeper understanding of my journey—beyond traditional resumes. Here, you'll find insights into my skills, accomplishments, and personal interests, showcasing my unique perspective and approach. I invite you to explore my projects and experiences, and connect with me to learn more about how I can contribute to your team or organization.</p>
+        <p class="welcome-message">I'll preface this by saying that nothing on this page is not already available on the internet. If you have stumbled across this page and you are not a recruiter, well, here's my story. In chronological order, you'll see some key highlights that bring out my experience and who I am in a more consumable way. The intent is to give a better glimpse as to who I am, in ways that a plain old resume could never convey.</p>
     </header>
     
     <main>
@@ -85,7 +87,7 @@
                     <p>In 2012, Christina graduated with honors from Gulliver Preparatory School in Miami, FL, where she served as captain and starting pitcher of the women's softball team for three years. That year, the team achieved a historic "three-peat," winning the Florida 3A state finals for three consecutive years and making headlines across the state.</p>
                     <p> She received a full scholarship to attend George Mason University, being honored both with athletic and academic scholarships.</p>
                 </div>        
-                <img src="harbor_walk_sunset.jpeg" alt="Picture of sunset." class="year-image" />
+                <div class="image-placeholder">Image 2012</div>
             </div>
             <div class="year">
                 <div class="widget-box">
