@@ -10,6 +10,9 @@
             padding: 0;
             background-color: #d1f2eb; /* Light blue background */
             color: #333;
+            display: flex; /* Use flexbox for body */
+            flex-direction: column; /* Stack children vertically */
+            align-items: center; /* Center children horizontally */
         }
         header {
             text-align: center; /* Center the header content */
@@ -24,19 +27,21 @@
             font-size: 1em; /* Set paragraph font size to be smaller */
             margin: 10px 0; /* Margin for spacing */
             max-width: 1000px; /* Expanded width of the message */
-            margin-left: auto; /* Center the message */
-            margin-right: auto; /* Center the message */
         }
         .timeline {    
             max-width: 1000px;    
             margin: 0 auto;    
             padding: 20px 0;
+            display: flex; /* Use flexbox for timeline */
+            flex-direction: column; /* Stack years vertically */
+            align-items: center; /* Center items horizontally */
         }
         
         .year {    
             margin: 20px 0; /* Maintain vertical spacing */
             display: flex; /* Use flexbox for the year */
             align-items: stretch; /* Stretch items to the same height */
+            justify-content: center; /* Center items horizontally */
         }
         
         .widget-box {
